@@ -166,32 +166,6 @@ body {
 	}
 }
 
-@media (min-width: 768px) {
-	.white-block {
-		height: 60px;
-		width: 45%;
-	}
-
-	.header {
-		&__heading {
-			font-size: 6.6rem;
-		}
-		&__text {
-			font-size: 2.2rem;
-		}
-
-		&__btn {
-			font-size: 1.6rem;
-		}
-	}
-
-	.dreams {
-		&__text {
-			font-size: 1.8rem;
-		}
-	}
-}
-
 .dreams {
 	&__box {
 		display: flex;
@@ -210,6 +184,25 @@ body {
 
 	&__text {
 		font-size: 1.4rem;
+	}
+}
+
+.hero-img {
+	position: relative;
+	padding: 20em 2em;
+	@include headerImg('../img/polynesia_640.jpg');
+	text-align: center;
+	color: $pure-white;
+	overflow: hidden;
+
+	&__title {
+		font-family: 'Dancing Script', cursive;
+		margin-bottom: 0.5em;
+		font-size: 4.8rem;
+	}
+
+	&__text {
+		padding: 1em 0;
 	}
 }
 
@@ -239,6 +232,45 @@ body {
 		&__img {
 			margin-bottom: 0;
 			max-height: 300px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.white-block {
+		height: 60px;
+		width: 45%;
+	}
+
+	.header {
+		&__heading {
+			font-size: 6.6rem;
+		}
+		&__text {
+			font-size: 2.2rem;
+		}
+
+		&__btn {
+			font-size: 1.6rem;
+		}
+	}
+
+	.dreams {
+		&__text {
+			font-size: 1.8rem;
+		}
+	}
+
+	.hero-img {
+		padding: 30em 2em;
+
+		hr {
+			margin: 0 auto;
+			width: 70%;
+		}
+
+		&__text {
+			font-size: 2.2rem;
 		}
 	}
 }
@@ -281,6 +313,20 @@ body {
 
 		&__text {
 			font-size: 2.2rem;
+		}
+	}
+
+	.hero-img {
+		padding: 40em 2em;
+		background-image: $blue-gradient, url('..//img/polynesia_1920.jpg');
+
+		&__title {
+			font-size: 7.2rem;
+		}
+
+		hr {
+			width: 60%;
+			max-width: 900px;
 		}
 	}
 }
