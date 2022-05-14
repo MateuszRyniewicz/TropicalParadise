@@ -125,6 +125,13 @@ body {
 .nav-Items-animation {
 	animation: navItemsAnimation 1s both;
 }
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
+}
+
 .header {
 	position: relative;
 	display: flex;
@@ -438,7 +445,7 @@ body {
 	}
 
 	&__box-desktop {
-		//display: none;
+		display: none;
 	}
 
 	&__box-title {
